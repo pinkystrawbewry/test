@@ -1,0 +1,21 @@
+<div class="mb-4">
+    <h2>Asisten Formula 🤖</h2>
+    <p class="text-muted">Bingung pakai rumus apa? Ketikkan apa yang ingin kamu lakukan, dan kami akan mencarikan rumusnya.</p>
+</div>
+
+<div class="card mb-4" style="background-color: var(--surface-container);">
+    <form id="asisten-form">
+        <div class="form-group">
+            <label class="form-label" for="asisten-input">Apa yang ingin kamu lakukan di Excel?</label>
+            <input type="text" id="asisten-input" class="form-control" placeholder="Contoh: Saya ingin mencari rata-rata nilai siswa" required>
+        </div>
+        <button type="submit" class="btn btn-primary mt-1">Carikan Rumus</button>
+    </form>
+</div>
+
+<div class="card">
+    <h3>Hasil:</h3>
+    <div id="asisten-result" class="mt-2 text-muted">
+        Tidak ada hasil. Silakan cari terlebih dahulu.
+    </div>
+</div>

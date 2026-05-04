@@ -1,0 +1,40 @@
+<div class="mb-4">
+    <h2>Mini Tools 🛠️</h2>
+    <p class="text-muted">Berbagai alat sederhana untuk membantumu bekerja lebih cepat di Excel.</p>
+</div>
+
+<div class="grid-2">
+    <div class="card">
+        <h3>Pemisah Teks (Split Text)</h3>
+        <p class="text-muted mb-2" style="font-size: 0.875rem;">Pisahkan teks berdasarkan karakter spasi atau koma untuk ditaruh ke kolom.</p>
+        
+        <div class="form-group">
+            <input type="text" id="split-input" class="form-control" placeholder="Ahmad,Budi,Citra">
+        </div>
+        <button class="btn btn-secondary mt-1 btn-block justify-center" onclick="
+            const val = document.getElementById('split-input').value;
+            const res = document.getElementById('split-result');
+            if(val) {
+                res.innerHTML = val.split(/[,\s]+/).map(v => `<span class='badge badge-primary mr-1 mb-1'>${v}</span>`).join(' ');
+            }
+        ">Pisahkan</button>
+        <div id="split-result" class="mt-3"></div>
+    </div>
+
+    <div class="card">
+        <h3>Pengubah Huruf Besar (UPPER)</h3>
+        <p class="text-muted mb-2" style="font-size: 0.875rem;">Ubah teks menjadi kapital semua.</p>
+        
+        <div class="form-group">
+            <input type="text" id="upper-input" class="form-control" placeholder="masukkan teks kapital">
+        </div>
+        <button class="btn btn-secondary mt-1 btn-block justify-center" onclick="
+            const val = document.getElementById('upper-input').value;
+            const res = document.getElementById('upper-result');
+            if(val) {
+                res.innerHTML = `<div class='formula-box'>${val.toUpperCase()}</div>`;
+            }
+        ">Ubah</button>
+        <div id="upper-result" class="mt-3"></div>
+    </div>
+</div>

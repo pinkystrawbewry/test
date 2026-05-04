@@ -1,0 +1,30 @@
+<div class="mb-4">
+    <a href="#/materi" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.875rem;">← Kembali</a>
+</div>
+
+<div class="card mb-4">
+    <h2>Level 4: Logika IF</h2>
+    <p class="text-muted mb-3">Menggunakan rumus IF untuk membuat keputusan.</p>
+    
+    <div style="background: var(--background); padding: 1.5rem; border-radius: var(--radius-md);" class="mb-3">
+        <h4>Struktur Rumus IF</h4>
+        <p class="mt-1">
+            <code>=IF(Kondisi, "Jika Benar", "Jika Salah")</code><br>
+            Contoh: <code>=IF(A1>75, "Lulus", "Gagal")</code>
+        </p>
+    </div>
+
+    <h4>Latihan: Logika IF</h4>
+    <p>Nilai siswa ada di sel C2. Jika C2 >= 80, maka "Lulus", jika tidak "Remedial". Tulis rumusnya:</p>
+    
+    <div class="form-group mt-2">
+        <input type="text" id="level4-input" class="form-control" placeholder='Contoh: =IF(C2>=80, "Lulus", "Remedial")' autocomplete="off">
+    </div>
+    
+    <button class="btn btn-primary" id="check-answer-btn" data-input="level4-input" data-answer='=IF(C2>=80, "Lulus", "Remedial")'>Periksa Jawaban</button>
+</div>
+
+<div class="d-flex justify-between">
+    <a href="#/level3" class="btn btn-outline">← Level 3</a>
+    <a href="#/level5" class="btn btn-secondary">Level 5 →</a>
+</div>

@@ -1,0 +1,30 @@
+<div class="mb-4">
+    <a href="#/materi" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.875rem;">← Kembali</a>
+</div>
+
+<div class="card mb-4">
+    <h2>Level 5: VLOOKUP</h2>
+    <p class="text-muted mb-3">Mencari dan menarik data dari tabel referensi (Tabel Bantuan).</p>
+    
+    <div style="background: var(--background); padding: 1.5rem; border-radius: var(--radius-md);" class="mb-3">
+        <h4>Struktur Rumus VLOOKUP</h4>
+        <p class="mt-1">
+            <code>=VLOOKUP(Nilai_Dicari, Tabel_Referensi, Indeks_Kolom, 0)</code><br>
+            Contoh: <code>=VLOOKUP(A2, E1:F5, 2, 0)</code>. Angka <code>0</code> digunakan untuk pencarian mutlak (Exact Match).
+        </p>
+    </div>
+
+    <h4>Latihan: VLOOKUP</h4>
+    <p>Nilai yang dicari ada di A2. Tabel referensi ada di E1:G5. Ambil data di kolom kedua.</p>
+    
+    <div class="form-group mt-2">
+        <input type="text" id="level5-input" class="form-control" placeholder='Contoh: =VLOOKUP(...)' autocomplete="off">
+    </div>
+    
+    <button class="btn btn-primary" id="check-answer-btn" data-input="level5-input" data-answer="=VLOOKUP(A2,E1:G5,2,0)">Periksa Jawaban</button>
+</div>
+
+<div class="d-flex justify-between">
+    <a href="#/level4" class="btn btn-outline">← Level 4</a>
+    <a href="#/dashboard" class="btn btn-primary">Selesai Belajar!</a>
+</div>

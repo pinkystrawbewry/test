@@ -1,0 +1,34 @@
+<div class="mb-4">
+    <h2>Mode Tantangan ⏱️</h2>
+    <p class="text-muted">Uji kecepatanmu dalam menggunakan Excel.</p>
+</div>
+
+<div id="challenge-intro" class="card text-center">
+    <h3>Mulai Tantangan 60 Detik</h3>
+    <p class="mt-2 mb-3 text-muted">Kamu akan diberikan beberapa kasus yang harus diselesaikan segera sebelum waktu habis.</p>
+    <button id="start-challenge-btn" class="btn btn-primary btn-block" style="justify-content: center; max-width: 300px; margin: 0 auto;">Mulai Sekarang!</button>
+</div>
+
+<div id="challenge-area" style="display: none;">
+    <div class="d-flex justify-between align-center mb-3">
+        <h3 class="text-error" style="font-size: 2rem;">Waktu: <span id="challenge-timer">01:00</span></h3>
+    </div>
+
+    <div class="card mb-3">
+        <h4>Tantangan #1</h4>
+        <p>Gabungkan karakter sel A1 dan B1 menggunakan simbol "dan".</p>
+        <div class="form-group mt-2">
+            <input type="text" class="form-control" placeholder="Awali dengan =" autocomplete="off">
+        </div>
+    </div>
+    
+    <div class="card mb-3">
+        <h4>Tantangan #2</h4>
+        <p>Cari Nilai tertinggi dalam rentang C1 sampai C100.</p>
+        <div class="form-group mt-2">
+            <input type="text" class="form-control" placeholder="Contoh: =MAX(...)" autocomplete="off">
+        </div>
+    </div>
+
+    <button id="challenge-submit-btn" class="btn btn-success btn-block" style="justify-content: center; background-color: var(--success); color: white;">Selesai & Kumpulkan Skor</button>
+</div>
